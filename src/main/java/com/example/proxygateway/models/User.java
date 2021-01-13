@@ -23,17 +23,11 @@ public class User implements UserDetails {
     private String password;
 
 
-//    private String username;
+
 
     private String role;
 
-//    public String getUsername() {
-//        return username;
-//    }
-//
-//    public void setUsername(String username) {
-//        this.username = username;
-//    }
+
 
     public User() {
     }
@@ -125,8 +119,6 @@ public class User implements UserDetails {
     public void setRole(String role) {
         this.role = role;
     }
-
-
 
     @JsonDeserialize(using = CustomAuthorityDeserializer.class)
     @Override

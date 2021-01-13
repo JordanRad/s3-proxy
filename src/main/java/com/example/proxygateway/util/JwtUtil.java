@@ -16,8 +16,6 @@ import java.util.function.Function;
 @Service
 public class JwtUtil {
 
-//    @Autowired
-//    private UserRepository repository;
 @Autowired
 private WebClient.Builder webClientBuilder;
 
