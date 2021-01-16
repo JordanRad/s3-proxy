@@ -73,7 +73,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable().cors().and()
                 .authorizeRequests()
-
                 .antMatchers("/account-service/api/users/getAll","/order-service/api/orders/getAll").access("hasRole('ADMIN')")
                 .antMatchers("/order-service/api/orders/getAllNewAndProcessing","/order-service/api/orders/getAllNew","/order-service/api/orders/getAllCompleted").access("hasRole('ADMIN')")
                 .antMatchers(HttpMethod.DELETE,"/product-service/api/products/**").access("hasRole('ADMIN')")
