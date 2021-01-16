@@ -21,7 +21,7 @@ public class JwtUserDetailService implements UserDetailsService {
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException
     {
 
-        String url = String.format("http://localhost:8081/api/user/getByEmail/%s",email);
+        String url = String.format("https://jordan-account-service.herokuapp.com/api/user/getByEmail/%s",email);
         User user = webClientBuilder
                 .build()
                 .get()
