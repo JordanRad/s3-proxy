@@ -1,5 +1,4 @@
-# Zuul Proxy Gateway
-## Microservices Gateway
+# Microservices Proxy 
 Zuul proxy acts an entry point to my microservices web application where all the requests are filtered and send to one of the following microservices
 
 ## Case
